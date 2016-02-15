@@ -4,7 +4,11 @@
 //Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
 
   //Code here
-
+var me = {
+  name: "justin",
+  age: 34
+};
+alert(me.name);
 
 
 
@@ -16,18 +20,25 @@
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
   //Code here
-
+var favoriteThings = {
+  band: "Hans Zimmer",
+  food: "BBQ",
+  person: "Joseph",
+  book: "As a man thinketh",
+  movie: "Rocky",
+  holiday: "Christmas",
+};
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Code here
-
+favoriteThings.car = "Porche";
 
 //Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'.
 
   //Code here
-
-
+favoriteThings["food"]="lettuce";
+favoriteThings["book"]="50 Shades fo Gray";
 
 
 //NEXT PROBLEM
@@ -43,6 +54,10 @@ Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
 
   //Code here
+var backPack = {
+
+}
+var item = "firstPocket";
 
 //After you do the above, alert your entire backPack object.
 
@@ -65,11 +80,21 @@ Instead, console.log your whole backPack object and then check out the console. 
 //Create an 'alsoMe' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
   //Code Here
-
+var alsoMe = {
+  name: "roger",
+  age: 7,
+  height: "2 feet",
+  gender: "male",
+  married: "nope",
+  eyeColor: "yellow",
+  hairColor: "yellow", 
+}
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
   //Code Here
-
+for (var p in alsoMe) {
+  console.log(alsoMe[p]);
+}
 
 
 
